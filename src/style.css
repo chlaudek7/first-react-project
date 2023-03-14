@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#loadingLayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+#head{
+    text-align: center;
+    /* background-color: #000; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 30px;
+    width: 100%;
+}
+#head ul li{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 25px;
+    line-height: 70px;
+}
+#head ul li a{
+    display: block;
+    color:#333;
+    font-size: 20px;
+    font-weight: bold;
+}
+#homeLayer{
+    background-color: bisque;
+    padding: 150px 0 110px;
+    height: 100vh;
+}
+.homeWrap{
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.con{
+    width: 1260px;
+    margin: 0 auto;
+}
+.movieLineTit{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.bookList li{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 15px;
+}
+.bookList li img{
+    width: 100%;
+}
+.bookList li p{
+    word-break: keep-all;
+    white-space: normal;
+    margin-top: 10px;
+}
+.slideWrap{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 410px;
+}
+.bookList{
+    /* white-space: nowrap; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.movieInfo{
+    background-size: cover;
+    position: relative;    
+    color:#fff;
+    padding: 50px 0;
+
+}
+.movieInfo .con{
+    position: relative;
+    display: flex;
+}
+.movieInfo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 0;
+
+}
+.movieText{
+    padding-left: 50px;
+    padding-top: 25px;
+}
+.movieText .movieTitle{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom:25px ;
+}
+.movieText .movieTitle span{
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 15px;
+}
+.movieText .movieDes{
+    font-size: 18px;
+    line-height: 25px;
+}
+.homeBtn{
+    color:#fff;
+    background-color: #333;
+    border: 2px solid #333;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.genres{
+    display: flex;
+    margin-top: 20px;
+}
+.genres li::before{
+    content: "#";
+}
+.genres li{
+    margin-right: 15px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 3px 10px 5px;
+    border-radius: 5px;
+    border:1px solid #fff;
+    font-size: 15px;
+}
